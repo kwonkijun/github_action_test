@@ -8,5 +8,5 @@ html = response.text
 
 soup = BeautifulSoup(html, 'html.parser')
 bookservices = soup.select('.title_text')
-for no, boot in enumerate(bookservices, 1):
+for no, book in enumerate(bookservices, 1):
   print(no, book.text.strip())
